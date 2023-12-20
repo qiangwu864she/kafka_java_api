@@ -8,7 +8,7 @@
     <artifactId>kafka_java_api</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <repositories><!-- 代码库 -->
+    <!--<repositories>&lt;!&ndash; 代码库 &ndash;&gt;
         <repository>
             <id>central</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
@@ -21,7 +21,7 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <dependencies>
         <!-- kafka客户端工具 -->
