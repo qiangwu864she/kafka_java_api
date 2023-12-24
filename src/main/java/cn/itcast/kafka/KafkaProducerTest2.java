@@ -28,7 +28,7 @@ public class KafkaProducerTest2 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // 1. 创建用于连接Kafka的Properties配置
         Properties props = new Properties();
-        props.put("bootstrap.servers", "node1.itcast.cn:9092");
+        props.put("bootstrap.servers", "127.0.0.1:19092");
         props.put("acks", "all");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
@@ -49,7 +49,7 @@ public class KafkaProducerTest2 {
             // System.out.println("第" + i + "条消息写入成功！");
 
             // 二、使用异步回调的方式发送消息
-            ProducerRecord<String, String> producerRecord = new ProducerRecord<>("test1", null, i + "");
+            ProducerRecord<String, String> producerRecord = new ProducerRecord<>("test", null, i + "");
             kafkaProducer.send(producerRecord, new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata metadata, Exception exception) {

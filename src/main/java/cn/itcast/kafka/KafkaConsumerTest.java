@@ -30,7 +30,7 @@ public class KafkaConsumerTest {
     public static void main(String[] args) throws InterruptedException {
         // 1.创建Kafka消费者配置
         Properties props = new Properties();
-        props.setProperty("bootstrap.servers", "127.0.0.1:9092");
+        props.setProperty("bootstrap.servers", "127.0.0.1:19092");
         // 消费者组（可以使用消费者组将若干个消费者组织到一起），共同消费Kafka中topic的数据
         // 每一个消费者需要指定一个消费者组，如果消费者的组名是一样的，表示这几个消费者是一个组中的
         props.setProperty("group.id", "test");

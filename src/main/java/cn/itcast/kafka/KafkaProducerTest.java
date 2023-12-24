@@ -29,7 +29,7 @@ public class KafkaProducerTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // 1. 创建用于连接Kafka的Properties配置
         Properties props = new Properties();
-        props.put("bootstrap.servers", "127.0.0.1:9092");
+        props.put("bootstrap.servers", "127.0.0.1:19092");
         props.put("acks", "all");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
